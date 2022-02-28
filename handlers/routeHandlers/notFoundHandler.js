@@ -7,7 +7,7 @@
 const handler ={};
 handler.notFoundHandler=(requestProperty,callback)=>{
     callback(404,{
-        message : 'Your requested url is not found'
+        message : 'Your requested url is not found',
     })
 };
 module.exports = handler;
