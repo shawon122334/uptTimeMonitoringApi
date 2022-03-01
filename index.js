@@ -16,8 +16,11 @@ const app = {};
 
 // testing file system configuration
 // @TODO : pore muche dibo 
-data.create('test','newFile',{'name':'bangladesh','language': 'bangla'},(err)=>{
-    console.log('error was ',err);
+// data.create('test','newFile',{'name':'bangladesh','language': 'bangla'},(err)=>{
+//     console.log('error was ',err);
+// });
+data.read('test','newFile',(err,result)=>{
+    console.log(err,result);
 });
 
 // create server
