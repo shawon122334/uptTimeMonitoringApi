@@ -19,8 +19,14 @@ const app = {};
 // data.create('test','newFile',{'name':'bangladesh','language': 'bangla'},(err)=>{
 //     console.log('error was ',err);
 // });
-data.read('test','newFile',(err,result)=>{
-    console.log(err,result);
+
+// data.read('test','newFile',(err,result)=>{
+//     console.log(err,result);
+// });
+
+
+data.update('test','newFile',{'name':'england','language':'english'},(err)=>{
+    console.log(err);
 });
 
 // create server
