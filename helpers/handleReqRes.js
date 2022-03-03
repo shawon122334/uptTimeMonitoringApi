@@ -25,7 +25,7 @@ handler.handleReqRes=(req,res)=>{
     const headersObject = req.headers;
     //console.log(headersObject);
 
-    // as handler is out of this file so we have to sent all the request property to there.so, making an object, when we call the choosenHandler we pass the requestProperty (line 48)
+    // as handler is out of this file so we have to sent all the request property to there.so, making an object, when we call the choosenHandler we pass the requestProperty (line 50)
     const requestProperty = {
         parsedUrl,
         path,
@@ -67,7 +67,9 @@ handler.handleReqRes=(req,res)=>{
              const payloadString = JSON.stringify(payload);
     
             // return the final response 
+            res.setHeader('Content-Type', 'application/json'); // client knows that server says response will be in json 
             res.writeHead(statusCode);
+
             res.end(payloadString);
         });
         // response handle

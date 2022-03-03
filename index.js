@@ -22,17 +22,17 @@ const app = {};
 // });
 
 // data.read('test','newFile',(err,result)=>{
-//     console.log(err,result);b
+//     console.log(err,result);
 // });
 
 
-// data.update('test','newFile',{'name':'england','language':'english'},(err)=>{
-//     console.log(err);
-// });
-
-data.delete('test','newFile',(err)=>{
+data.update('test','newFile',{'name':'england','language':'english'},(err)=>{
     console.log(err);
 });
+
+// data.delete('test','newFile',(err)=>{
+//     console.log(err);
+// });
 
 // create server
 app.createServer = ()=>{
